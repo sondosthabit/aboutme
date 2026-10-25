@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>سندس ثابت القحطاني | طالبة أمن سيبراني</title>
+
+<meta name="description" content="الموقع الشخصي لسندس ثابت القحطاني — طالبة أمن سيبراني بجامعة بيشة، كلية الحاسبات وتقنية المعلومات.">
+<meta name="keywords" content="سندس القحطاني, أمن سيبراني, جامعة بيشة, Cyber Security">
+<meta name="author" content="سندس ثابت القحطاني">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="سندس ثابت القحطاني | طالبة أمن سيبراني">
+<meta property="og:description" content="طالبة أمن سيبراني بجامعة بيشة، مهتمة بالدفاع السيبراني وتحليل الثغرات وحماية المعلومات.">
+<meta property="og:locale" content="ar_SA">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23d4778f%22 font-family=%22Cairo, sans-serif%22>س</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "سندس ثابت القحطاني",
+  "jobTitle": "طالبة أمن سيبراني",
+  "affiliation": {"@type": "EducationalOrganization","name": "جامعة بيشة - كلية الحاسبات وتقنية المعلومات"},
+  "sameAs": [
+    "https://www.linkedin.com/in/sondos-thabit-575568389",
+    "https://github.com/sondosthabit"
+  ]
+}
+</script>
+
+<style>
+:root{
+  --plum:#4a2344;--plum-2:#6b3563;--rose:#d4778f;--rose-dark:#a84d6e;--rose-light:#f0c4d2;
+  --gold:#d4af7a;--bg:#fef7f9;--bg-alt:#fceef3;--card:#ffffff;--text:#3a2535;--muted:#8a7080;
+  --header-bg:rgba(254,247,249,.98);--radius:24px;
+  --shadow:0 10px 30px rgba(74,35,68,.08);--shadow-hover:0 18px 40px rgba(212,119,143,.2);
+}
+[data-theme="dark"]{
+  --plum:#f0d8e8;--plum-2:#d8b0cc;--rose:#e890a8;--rose-dark:#f0b8c8;--rose-light:#f5c4d4;
+  --gold:#d4af7a;--bg:#160e1c;--bg-alt:#1f1428;--card:#271a33;--text:#e8dce8;--muted:#a894b0;
+  --header-bg:rgba(22,14,28,.98);
+  --shadow:0 10px 30px rgba(0,0,0,.4);--shadow-hover:0 18px 40px rgba(232,144,168,.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.9;overflow-x:hidden;transition:background .3s,color .3s}
+h1,h2,h3,h4{font-family:'Cairo',sans-serif;font-weight:700;line-height:1.5;letter-spacing:-0.3px}
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+a,button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+
+/* Progress bar */
+.progress-container{position:fixed;top:0;right:0;width:100%;height:4px;background:transparent;z-index:9999;pointer-events:none}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--rose),var(--gold));width:0%;position:absolute;right:0;border-radius:0 0 0 5px}
+[dir="ltr"] .progress-bar{right:auto;left:0;border-radius:0 0 5px 0}
+
+/* Header */
+header{position:relative;z-index:100;background:var(--header-bg);border-bottom:1px solid rgba(212,119,143,.2);box-shadow:0 2px 20px rgba(74,35,68,.05);transition:background .3s}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:78px}
+.logo{justify-self:start;display:flex;flex-direction:column;line-height:1.2}
+.logo strong{font-size:1.45rem;font-weight:800;color:var(--plum);font-family:'Cairo',sans-serif}
+.logo span{font-size:.75rem;color:var(--rose-dark);font-weight:500;letter-spacing:.6px;font-family:'IBM Plex Sans Arabic',sans-serif}
+.nav-links{justify-self:center;display:flex;gap:15px;list-style:none;font-size:.9rem;font-weight:500;font-family:'IBM Plex Sans Arabic',sans-serif}
+.nav-links a{transition:.25s;position:relative;padding:4px 0;white-space:nowrap;color:var(--text)}
+.nav-links a:hover{color:var(--rose-dark)}
+.nav-links a::after{content:'';position:absolute;bottom:0;right:0;width:0;height:2px;background:linear-gradient(90deg,var(--rose),var(--gold));transition:.3s;border-radius:2px}
+.nav-links a:hover::after{width:100%}
+[dir="ltr"] .nav-links a::after{right:auto;left:0}
+
+.header-actions{justify-self:end;display:flex;align-items:center;gap:10px}
+.lang-toggle,.theme-toggle{width:42px;height:42px;border-radius:12px;background:rgba(212,119,143,.1);border:1px solid rgba(212,119,143,.28);color:var(--plum);cursor:pointer;font-family:'Cairo',sans-serif;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;transition:.3s;line-height:1}
+.lang-toggle:hover,.theme-toggle:hover{background:var(--rose);color:#fff;border-color:var(--rose);transform:translateY(-2px)}
+[data-theme="dark"] .lang-toggle,[data-theme="dark"] .theme-toggle{background:rgba(232,144,168,.15);border-color:rgba(232,144,168,.3);color:#f0d8e8}
+[data-theme="dark"] .lang-toggle:hover,[data-theme="dark"] .theme-toggle:hover{background:var(--rose);color:#fff}
+.burger{display:none;background:none;border:none;font-size:1.4rem;color:var(--text);cursor:pointer;width:44px;height:44px;border-radius:12px}
+.burger:hover{background:rgba(212,119,143,.12)}
+
+/* Hero */
+.hero{color:#fff;padding:110px 0 120px;position:relative;overflow:hidden;text-align:center;
+background:radial-gradient(circle at 15% 20%, rgba(184,160,208,.28), transparent 45%),
+radial-gradient(circle at 85% 80%, rgba(212,175,122,.22), transparent 45%),
+linear-gradient(135deg,#4a2344 0%,#6b3563 50%,#a84d6e 100%)}
+.hero::before{content:'\f3ed';font-family:'Font Awesome 6 Free';font-weight:900;position:absolute;font-size:22rem;color:rgba(255,255,255,.04);bottom:-80px;left:-40px;line-height:1;pointer-events:none}
+.hero-inner{max-width:820px;margin:0 auto;position:relative;z-index:2}
+.hero h1{font-size:3.4rem;font-weight:800;line-height:1.4;margin-bottom:20px;font-family:'Cairo',sans-serif;color:#fff}
+.hero h1 em{font-style:normal;color:#f0c4d2}
+.hero p{font-size:1.08rem;color:rgba(255,255,255,.88);max-width:620px;margin:0 auto 10px}
+
+/* Sections */
+section{padding:85px 0}
+.section-head{text-align:center;margin-bottom:55px}
+.section-head h2{font-size:2.6rem;font-weight:800;color:var(--plum);margin-bottom:16px}
+.section-head p{color:var(--muted);max-width:650px;margin:0 auto;font-size:.98rem}
+.divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto;margin-bottom:20px}
+.divider::before,.divider::after{content:'';width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--rose),transparent)}
+.divider i{color:var(--rose);font-size:.95rem}
+
+/* About */
+#about{background:var(--bg)}
+.about-text{max-width:820px;margin:0 auto;text-align:center}
+.about-text h3{font-size:2rem;color:var(--plum);margin-bottom:18px;font-weight:700}
+.about-text p{color:var(--text);margin-bottom:16px;font-size:1rem;opacity:.92}
+.about-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;justify-content:center}
+.tag{background:linear-gradient(135deg,#fff,#fceef3);border:1px solid rgba(212,119,143,.35);color:var(--plum);padding:8px 20px;border-radius:50px;font-size:.85rem;font-weight:500}
+[data-theme="dark"] .tag{background:linear-gradient(135deg,#271a33,#352444);border-color:rgba(232,144,168,.3)}
+
+/* Stats */
+.stats-section{background:var(--bg-alt);padding:85px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.stat-item{background:var(--card);border-radius:var(--radius);padding:30px 20px;text-align:center;box-shadow:var(--shadow);border:1px solid rgba(212,119,143,.14);transition:.3s}
+.stat-item:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);border-color:var(--rose)}
+.stat-icon{width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#fceef3,#f0e0e8);color:var(--rose-dark);display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 15px;border:2px solid rgba(212,175,122,.35)}
+[data-theme="dark"] .stat-icon{background:linear-gradient(135deg,#352444,#2a1e34)}
+.stat-number{font-family:'Cairo',sans-serif;font-size:2.9rem;font-weight:800;color:var(--plum);line-height:1.2;display:flex;align-items:center;justify-content:center;min-height:3.5rem}
+.stat-label{font-size:1rem;font-family:'IBM Plex Sans Arabic',sans-serif;color:var(--muted);font-weight:600;margin-top:5px}
+
+/* Skills */
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.skill-card{background:var(--card);border-radius:18px;padding:18px 16px;box-shadow:var(--shadow);border:1px solid rgba(212,119,143,.14);transition:.3s;text-align:center}
+.skill-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover);border-color:rgba(212,119,143,.55)}
+.skill-card .card-icon{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;margin:0 auto 12px;background:linear-gradient(135deg,#fceef3,#e4d8f0);color:var(--rose-dark);box-shadow:0 4px 12px rgba(212,119,143,.18)}
+[data-theme="dark"] .skill-card .card-icon{background:linear-gradient(135deg,#352444,#2a1e34)}
+.skill-card h4{font-size:1rem;color:var(--plum);margin-bottom:6px;font-weight:700;line-height:1.4;font-family:'Cairo',sans-serif}
+.skill-card p{color:var(--muted);font-size:.78rem;line-height:1.7}
+
+/* Education */
+#education{background:var(--bg)}
+.edu-card{background:var(--card);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow);border:1px solid rgba(212,119,143,.14);display:flex;gap:24px;align-items:flex-start;max-width:820px;margin:0 auto}
+.edu-icon{min-width:70px;height:70px;border-radius:20px;background:linear-gradient(135deg,#fceef3,#e4d8f0);color:var(--rose-dark);display:flex;align-items:center;justify-content:center;font-size:1.8rem}
+[data-theme="dark"] .edu-icon{background:linear-gradient(135deg,#352444,#2a1e34)}
+.edu-card h4{color:var(--plum);font-size:1.5rem;margin-bottom:6px}
+.edu-card span{color:var(--rose-dark);font-weight:700;font-size:.95rem}
+.edu-card p{color:var(--muted);margin-top:8px}
+
+/* Projects */
+#projects{background:var(--bg-alt)}
+.project-card{background:var(--card);border-radius:var(--radius);padding:40px 34px;box-shadow:var(--shadow);border:1px solid rgba(212,119,143,.14);max-width:820px;margin:0 auto;transition:.3s}
+.project-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover);border-color:rgba(212,119,143,.5)}
+.project-card .card-icon{width:70px;height:70px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:1.9rem;margin-bottom:20px;background:linear-gradient(135deg,#fceef3,#e4d8f0);color:var(--rose-dark);box-shadow:0 6px 16px rgba(212,119,143,.18)}
+[data-theme="dark"] .project-card .card-icon{background:linear-gradient(135deg,#352444,#2a1e34)}
+.project-card h4{font-size:1.7rem;color:var(--plum);margin-bottom:12px;font-weight:700}
+.project-card p{color:var(--muted);font-size:.98rem;line-height:1.9}
+
+/* Certificates */
+#certificates{background:var(--bg)}
+.cert-grid{display:grid;grid-template-columns:repeat(1,minmax(0,420px));gap:24px;justify-content:center}
+.cert{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.3s;border:1px solid rgba(212,119,143,.18)}
+.cert:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover)}
+.cert-img{aspect-ratio:3/2;background:linear-gradient(160deg,#fceef3,#ffffff);display:flex;align-items:center;justify-content:center;border-bottom:1px solid rgba(212,119,143,.18)}
+[data-theme="dark"] .cert-img{background:linear-gradient(160deg,#352444,#271a33);border-bottom-color:rgba(232,144,168,.15)}
+.cert-img i{font-size:5rem;color:var(--rose-dark)}
+.cert-body{padding:18px 22px;text-align:center;background:var(--card)}
+.cert-body span{font-size:1.05rem;color:var(--plum);font-weight:700;font-family:'Cairo',sans-serif}
+.cert-body small{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}
+
+/* Activities */
+#activities{background:var(--bg-alt)}
+.activity-card{background:var(--card);border-radius:var(--radius);padding:36px 32px;box-shadow:var(--shadow);border:1px solid rgba(212,119,143,.14);max-width:900px;margin:0 auto;position:relative;transition:.3s}
+.activity-card:hover{box-shadow:var(--shadow-hover)}
+.activity-card::before{content:'';position:absolute;right:0;top:30px;bottom:30px;width:4px;background:linear-gradient(var(--rose),var(--gold));border-radius:4px 0 0 4px}
+[dir="ltr"] .activity-card::before{right:auto;left:0;border-radius:0 4px 4px 0}
+.activity-card h4{color:var(--plum);font-size:1.6rem;margin-bottom:6px;font-weight:700}
+.activity-card .act-meta{color:var(--rose-dark);font-weight:700;font-size:.9rem;margin-bottom:14px;display:inline-block}
+.activity-card p{color:var(--text);font-size:.96rem;margin-bottom:12px;opacity:.92;line-height:1.9}
+.activity-card ul{list-style:none;margin-top:12px}
+.activity-card ul li{padding:8px 0;color:var(--muted);font-size:.92rem;display:flex;align-items:flex-start;gap:10px;border-bottom:1px dashed rgba(212,119,143,.25)}
+.activity-card ul li:last-child{border-bottom:none}
+.activity-card ul li i{color:var(--rose-dark);margin-top:6px;font-size:.8rem}
+
+/* Gallery */
+.event-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.event-gallery figure{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,#fceef3,#e4d8f0);border:2px solid rgba(212,119,143,.3);box-shadow:var(--shadow);cursor:pointer;transition:.3s;margin:0}
+[data-theme="dark"] .event-gallery figure{background:linear-gradient(135deg,#352444,#2a1e34)}
+.event-gallery figure:hover{border-color:var(--rose);box-shadow:var(--shadow-hover);transform:translateY(-4px)}
+.event-gallery figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.event-gallery figure:hover img{transform:scale(1.06)}
+
+/* Lightbox */
+.lightbox{display:none;position:fixed;inset:0;background:rgba(20,10,26,.96);z-index:1000;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(8px)}
+.lightbox.open{display:flex}
+.lightbox-controls{position:absolute;top:20px;left:50%;transform:translateX(-50%);display:flex;gap:10px;background:rgba(255,255,255,.12);padding:10px 16px;border-radius:50px;backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.25);z-index:1002;box-shadow:0 8px 25px rgba(0,0,0,.4)}
+.lightbox-controls button{width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;background:rgba(255,255,255,.15);color:#fff;font-size:1.1rem;display:flex;align-items:center;justify-content:center;transition:.3s}
+.lightbox-controls button:hover{background:var(--rose);color:#fff;transform:scale(1.08)}
+.lightbox-controls button.close-btn{background:rgba(255,77,77,.28);color:#ff8b8b}
+.lightbox-controls button.close-btn:hover{background:#ff4d4d;color:#fff}
+.lightbox-img-wrap{max-width:92vw;max-height:82vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.lightbox img{max-width:92vw;max-height:82vh;object-fit:contain;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.55);transition:transform .3s ease;transform:scale(1);user-select:none;-webkit-user-drag:none}
+
+/* Footer */
+#contact{background:#2b1226;color:rgba(255,255,255,.82);padding:70px 0 30px;border-top:4px solid var(--rose);transition:background .3s}
+[data-theme="dark"] #contact{background:#0a0610}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-bottom:50px}
+.footer-col h4{color:#fff;font-size:1.35rem;margin-bottom:22px;position:relative;padding-bottom:12px;font-family:'Cairo',sans-serif;font-weight:700}
+.footer-col h4::after{content:'';position:absolute;bottom:0;right:0;width:35px;height:2px;background:var(--rose)}
+[dir="ltr"] .footer-col h4::after{right:auto;left:0}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:14px}
+.footer-col ul li a{font-size:.9rem;transition:.3s;display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Sans Arabic',sans-serif}
+.footer-col ul li a:hover{color:var(--rose-light);transform:translateX(-5px)}
+[dir="ltr"] .footer-col ul li a:hover{transform:translateX(5px)}
+[dir="ltr"] .footer-col ul li a .fa-angles-left{transform:scaleX(-1)}
+.footer-socials,.accessibility-tools{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.footer-socials a,.accessibility-tools button{width:42px;height:42px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.25);border-radius:10px;font-size:1.2rem;background:transparent;color:#fff;cursor:pointer;transition:.3s}
+.footer-socials a:hover,.accessibility-tools button:hover{background:var(--rose);color:#fff;border-color:var(--rose);transform:translateY(-3px)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:25px;text-align:center;font-size:.85rem}
+
+/* Back to top */
+.back-to-top{position:fixed;bottom:calc(26px + env(safe-area-inset-bottom,0px));right:calc(26px + env(safe-area-inset-right,0px));z-index:200;width:55px;height:55px;border-radius:50%;background:var(--rose);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 8px 24px rgba(212,119,143,.45);cursor:pointer;border:none;opacity:0;visibility:hidden;transition:.3s}
+.back-to-top.show{opacity:1;visibility:visible}
+.back-to-top:hover{transform:translateY(-5px);background:var(--rose-dark)}
+
+/* Responsive */
+@media(max-width:1050px){
+  .nav-links{gap:10px;font-size:.82rem}
+  .footer-grid{grid-template-columns:repeat(2,1fr);gap:30px}
+  .skills-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:900px){
+  .container{padding:0 18px}
+  .nav{grid-template-columns:1fr auto;height:70px}
+  .nav-links{position:absolute;top:70px;right:0;left:0;background:var(--bg-alt);flex-direction:column;padding:10px;gap:4px;display:none;box-shadow:0 10px 25px rgba(74,35,68,.14);border-bottom:2px solid var(--rose);font-size:.95rem}
+  .nav-links.open{display:flex}
+  .nav-links a{display:flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:12px;min-height:48px}
+  .nav-links a:hover{background:rgba(212,119,143,.12)}
+  .nav-links a::after{display:none}
+  .burger{display:block}
+  .hero{padding:70px 0 80px}
+  .hero::before{font-size:10rem;bottom:-40px;left:-20px}
+  .hero h1{font-size:2.5rem}
+  .hero p{font-size:1rem}
+  .about-text h3{font-size:1.7rem}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+  section{padding:55px 0}
+  .section-head{margin-bottom:38px}
+  .section-head h2{font-size:2rem}
+  #contact{padding:50px 0 20px}
+  .edu-card{flex-direction:column}
+  .event-gallery{grid-template-columns:repeat(2,1fr);gap:12px}
+}
+@media(max-width:560px){
+  .container{padding:0 15px}
+  section{padding:45px 0}
+  .hero{padding:48px 0 60px}
+  .hero h1{font-size:2rem}
+  .hero p{font-size:.94rem}
+  .stats-grid{grid-template-columns:1fr;gap:15px}
+  .stat-item{display:flex;align-items:center;justify-content:flex-start;text-align:right;padding:20px;gap:15px}
+  .stat-icon{margin:0;width:60px;height:60px;font-size:1.5rem;flex-shrink:0}
+  .stat-number{font-size:2rem;justify-content:flex-start;min-height:auto}
+  .stat-label{margin-top:0}
+  .stat-info{display:flex;flex-direction:column}
+  .section-head h2{font-size:1.85rem}
+  .section-head p{font-size:.9rem}
+  .skills-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .skill-card{padding:14px 12px}
+  .skill-card .card-icon{width:40px;height:40px;font-size:1rem;margin-bottom:10px}
+  .skill-card h4{font-size:.92rem}
+  .skill-card p{font-size:.72rem}
+  .about-text h3{font-size:1.5rem}
+  .about-text p{font-size:.94rem}
+  .tag{font-size:.78rem;padding:6px 16px}
+  .project-card,.activity-card,.edu-card{padding:26px 22px}
+  .event-gallery{grid-template-columns:1fr;gap:10px}
+  .footer-grid{grid-template-columns:1fr;gap:25px;text-align:center}
+  .footer-col h4::after{right:50%;transform:translateX(50%)}
+  [dir="ltr"] .footer-col h4::after{left:50%;right:auto;transform:translateX(-50%)}
+  .footer-col ul li a{justify-content:center}
+  .footer-socials,.accessibility-tools{justify-content:center}
+  .back-to-top{width:50px;height:50px;font-size:1.2rem;bottom:calc(18px + env(safe-area-inset-bottom,0px));right:calc(18px + env(safe-area-inset-right,0px))}
+  .lightbox-controls{top:12px;padding:8px 12px;gap:6px}
+  .lightbox-controls button{width:40px;height:40px;font-size:1rem}
+  .lang-toggle,.theme-toggle{width:36px;height:36px;font-size:.72rem}
+  .burger{width:38px;height:38px;font-size:1.2rem}
+}
+
+/* =========================================
+   تحسينات على تجربة AOS
+========================================= */
+[data-aos]{ will-change: transform, opacity; }
+
+/* احترام تفضيل تقليل الحركة */
+@media (prefers-reduced-motion: reduce){
+  [data-aos]{transition:none !important;transform:none !important;opacity:1 !important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+
+<header>
+  <div class="container nav">
+    <div class="logo">
+      <strong data-en="Sondos Al-Qahtani">سندس القحطاني</strong>
+      <span data-en="Cybersecurity Student">طالبة أمن سيبراني</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-en="About">عنّي</a></li>
+      <li><a href="#skills" data-en="Skills">المهارات</a></li>
+      <li><a href="#education" data-en="Education">التعليم</a></li>
+      <li><a href="#projects" data-en="Projects">المشاريع</a></li>
+      <li><a href="#certificates" data-en="Certificates">الشهادات</a></li>
+      <li><a href="#activities" data-en="Activities">الأنشطة</a></li>
+      <li><a href="#contact" data-en="Contact">تواصل</a></li>
+    </ul>
+
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="burger" id="burger" aria-label="القائمة"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="padding-top:90px">
+  <div class="container">
+    <div class="hero-inner">
+      <h1 data-aos="fade-down" data-aos-duration="1100" data-en-html='Sondos Thabit Al-Qahtani<br><em>Cybersecurity Student</em>'>سندس ثابت القحطاني<br><em>طالبة أمن سيبراني</em></h1>
+      <p data-aos="fade-down" data-aos-delay="200" data-aos-duration="1100" data-en="Aspiring to build a professional career in cybersecurity through continuous learning, hands-on labs, and participation in technical events and competitions.">
+        أسعى لبناء مسار مهني في الأمن السيبراني من خلال التعلم المستمر،
+        والتطبيق العملي في المعامل، والمشاركة في الأنشطة والمسابقات التقنية.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up" data-aos-duration="900">
+      <h2 data-en="About Me">عنّي</h2>
+      <div class="divider"><i class="fa-solid fa-shield-halved"></i></div>
+    </div>
+
+    <div class="about-text">
+      <h3 data-aos="fade-up" data-aos-duration="900" data-aos-delay="100" data-en="Learning today to protect tomorrow">أتعلم اليوم لأحمي الغد</h3>
+      <p data-aos="fade-up" data-aos-duration="900" data-aos-delay="200" data-en-html='I am <strong>Sondos Thabit Al-Qahtani</strong>, a Cybersecurity student at the College of Computing and IT at the University of Bisha. I am passionate about information security, vulnerability analysis, network protection, and understanding both attack and defense methodologies from an academic and applied perspective.'>
+        أنا <strong>سندس ثابت القحطاني</strong>، طالبة في تخصص الأمن السيبراني
+        بكلية الحاسبات وتقنية المعلومات في جامعة بيشة. أهتم بأمن المعلومات،
+        تحليل الثغرات، حماية الشبكة، وفهم أساليب الهجوم والدفاع من منظور
+        أكاديمي وتطبيقي.
+      </p>
+      <p data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" data-en="I believe cybersecurity is a responsibility and awareness before being tools and technologies, so I constantly develop my skills through academic projects, courses, hands-on labs, and community awareness activities.">
+        أؤمن بأن الأمن السيبراني مسؤولية ووعي قبل أن يكون أدوات وتقنيات،
+        لذلك أحرص على تطوير مهاراتي عبر المشاريع الأكاديمية، الدورات،
+        والمعامل التطبيقية، والمشاركة في الأنشطة التوعوية التي تخدم المجتمع.
+      </p>
+
+      <div class="about-tags">
+        <span class="tag" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="0" data-en="Information Security">أمن المعلومات</span>
+        <span class="tag" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="80" data-en="Vulnerability Analysis">تحليل الثغرات</span>
+        <span class="tag" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="160" data-en="Network Security">أمن الشبكات</span>
+        <span class="tag" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="240" data-en="Digital Forensics">التحقيق الجنائي الرقمي</span>
+        <span class="tag" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="320" data-en="Web Development">تطوير الويب</span>
+        <span class="tag" dir="ltr" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="400">Python &amp; Java</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section" id="stats">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up" data-aos-duration="900">
+      <h2 data-en="Quick Glance">لمحة سريعة</h2>
+      <div class="divider"><i class="fa-solid fa-shield-halved"></i></div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="zoom-in-up" data-aos-duration="900" data-aos-delay="0">
+        <div class="stat-icon"><i class="fa-solid fa-flask"></i></div>
+        <div class="stat-info">
+          <div class="stat-number"><span class="counter" data-target="1">٠</span></div>
+          <div class="stat-label" data-en="Academic Project">مشاريع أكاديمية</div>
+        </div>
+      </div>
+
+      <div class="stat-item" data-aos="zoom-in-up" data-aos-duration="900" data-aos-delay="120">
+        <div class="stat-icon"><i class="fa-solid fa-toolbox"></i></div>
+        <div class="stat-info">
+          <div class="stat-number"><span class="counter" data-target="11">٠</span></div>
+          <div class="stat-label" data-en="Technical Skills">المهارات التقنية</div>
+        </div>
+      </div>
+
+      <div class="stat-item" data-aos="zoom-in-up" data-aos-duration="900" data-aos-delay="240">
+        <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div class="stat-info">
+          <div class="stat-number"><span class="counter" data-target="1">٠</span></div>
+          <div class="stat-label" data-en="Attendance Certificate">شهادة حضور</div>
+        </div>
+      </div>
+
+      <div class="stat-item" data-aos="zoom-in-up" data-aos-duration="900" data-aos-delay="360">
+        <div class="stat-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+        <div class="stat-info">
+          <div class="stat-number"><span class="counter" data-target="1">٠</span></div>
+          <div class="stat-label" data-en="Awareness Event">فعالية توعوية</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--bg-alt)">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up" data-aos-duration="900">
+      <h2 data-en="Technical Skills">المهارات التقنية</h2>
+      <div class="divider"><i class="fa-solid fa-shield-halved"></i></div>
+      <p data-en="Academic and applied skills continuously being developed.">مهارات أكاديمية وتطبيقية قيد التطوير المستمر.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="0">
+        <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <h4 data-en="Networking Fundamentals">أساسيات الشبكات</h4>
+        <p data-en="OSI &amp; TCP/IP models and protocols.">نموذج OSI وTCP/IP والبروتوكولات.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="60">
+        <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4 data-en="Network Security">أمن الشبكات</h4>
+        <p data-en="Firewalls, IDS/IPS, and securing communications.">الجدر النارية، IDS/IPS، وحماية الاتصالات.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="120">
+        <div class="card-icon"><i class="fa-brands fa-linux"></i></div>
+        <h4>Linux</h4>
+        <p data-en="Command line, permissions, and OS fundamentals.">سطر الأوامر، الصلاحيات، وأساسيات الأنظمة.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="180">
+        <div class="card-icon"><i class="fa-brands fa-python"></i></div>
+        <h4>Python</h4>
+        <p data-en="Automation scripts and security programming basics.">سكربتات الأتمتة وأساسيات البرمجة الأمنية.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="240">
+        <div class="card-icon"><i class="fa-brands fa-java"></i></div>
+        <h4>Java</h4>
+        <p data-en="Object-oriented programming and application basics.">البرمجة الكائنية وأساسيات التطبيقات.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="300">
+        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+        <h4 dir="ltr">C++</h4>
+        <p data-en="Programming basics, data structures, and algorithms.">أساسيات البرمجة والهياكل والخوارزميات.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="360">
+        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+        <h4 data-en="Web Development">تطوير الويب</h4>
+        <p data-en="HTML, CSS, JavaScript, and frontend basics.">HTML وCSS وJavaScript وأساسيات الواجهات.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="420">
+        <div class="card-icon"><i class="fa-solid fa-bug"></i></div>
+        <h4 data-en="Penetration Testing">اختبار الاختراق</h4>
+        <p data-en="Information gathering and scanning in lab environments.">جمع المعلومات والفحص في بيئات معملية.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="480">
+        <div class="card-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h4 data-en="Digital Forensics">التحقيق الجنائي الرقمي</h4>
+        <p data-en="Analyzing digital evidence and inspection basics.">تحليل الأدلة الرقمية وأساسيات الفحص.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="540">
+        <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+        <h4 data-en="Cryptography">التشفير</h4>
+        <p data-en="Hashing, symmetric, and asymmetric encryption.">الهاش والتشفير المتماثل وغير المتماثل.</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="600">
+        <div class="card-icon"><i class="fa-solid fa-user-shield"></i></div>
+        <h4 data-en="Web Security">أمن الويب</h4>
+        <p data-en="XSS and SQL Injection vulnerabilities and protection.">ثغرات XSS وSQL Injection وطرق الحماية.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up" data-aos-duration="900">
+      <h2 data-en="Education">التعليم</h2>
+      <div class="divider"><i class="fa-solid fa-shield-halved"></i></div>
+    </div>
+
+    <div class="edu-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+      <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div>
+        <h4 data-en="Bachelor's in Cybersecurity">بكالوريوس الأمن السيبراني</h4>
+        <span data-en="University of Bisha — College of Computing and IT">جامعة بيشة — كلية الحاسبات وتقنية المعلومات</span>
+        <p data-en="Cybersecurity student at the College of Computing and IT at the University of Bisha, studying network security, cryptography, digital forensics, and cybersecurity risk management.">
+          طالبة في تخصص الأمن السيبراني بكلية الحاسبات وتقنية المعلومات
+          في جامعة بيشة، أدرس مقررات أمن الشبكات، التشفير، التحقيق الجنائي
+          الرقمي، وإدارة المخاطر السيبرانية.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="background:var(--bg-alt)">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up" data-aos-duration="900">
+      <h2 data-en="Projects">المشاريع</h2>
+      <div class="divider"><i class="fa-solid fa-shield-halved"></i></div>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">
+      <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+      <h4>WebGuard AI</h4>
+      <p data-en="A smart platform that simplifies website security analysis using AI technologies, helping beginners and small website owners understand their protection level and detect common risks such as weak configurations, input vulnerabilities, and certificate-related issues, while providing clear, easy-to-understand recommendations to improve security without requiring advanced technical expertise.">
+        منصة ذكية تهدف إلى تحليل أمن المواقع الإلكترونية بشكل مبسّط باستخدام
+        تقنيات الذكاء الاصطناعي، بحيث تساعد المبتدئين وأصحاب المواقع الصغيرة
+        على فهم مستوى الحماية في مواقعهم، واكتشاف المخاطر الشائعة مثل ضعف
+        الإعدادات، وثغرات الإدخال، والمشاكل المرتبطة بشهادات الأمان، مع تقديم
+        توصيات واضحة بلغة سهلة تساعد على تحسين الوضع الأمني للموقع دون الحاجة
+        إلى خبرة تقنية متقدمة.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up" data-aos-duration="900">
+      <h2 data-en="Certificates &amp; Courses">الشهادات والدورات</h2>
+      <div class="divider"><i class="fa-solid fa-shield-halved"></i></div>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+        <div class="cert-img"><i class="fa-solid fa-flag"></i></div>
+        <div class="cert-body">
+          <span data-en="CTF Camp Attendance Certificate">شهادة حضور معسكر CTF</span>
+          <small data-en="Capture The Flag Camp — Educational Security Challenges">معسكر Capture The Flag — تحديات أمنية تعليمية</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" style="background:var(--bg-alt)">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up" data-aos-duration="900">
+      <h2 data-en="Activities &amp; Events">الأنشطة والفعاليات</h2>
+      <div class="divider"><i class="fa-solid fa-shield-halved"></i></div>
+    </div>
+
+    <div class="activity-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+      <h4 data-en="Cybersecurity Event — University of Bisha">فعالية الأمن السيبراني — جامعة بيشة</h4>
+      <span class="act-meta">
+        <i class="fa-solid fa-calendar" style="margin-left:6px"></i>
+        <span data-en="Coinciding with Cybersecurity Awareness Month">بالتزامن مع شهر التوعية بالأمن السيبراني</span>
+      </span>
+
+      <p data-en-html='The <strong>Cybersecurity Department at the University of Bisha</strong> organized an awareness event coinciding with <strong>Cybersecurity Awareness Month</strong>, in which I actively participated alongside students, faculty members, and visitors.'>
+        نظّمت <strong>إدارة الأمن السيبراني بجامعة بيشة</strong> فعالية توعوية
+        بالتزامن مع <strong>شهر التوعية بالأمن السيبراني</strong>، وقد شاركتُ
+        فيها بحضور فاعل إلى جانب الزوار من الطلاب والطالبات وأعضاء هيئة التدريس.
+      </p>
+      <p data-en-html='During the event, I interacted with visitors and raised their awareness of the importance of cybersecurity in their daily lives. I also presented a simple game titled <strong>&quot;Cyber Quiz&quot;</strong> aimed at testing their cybersecurity knowledge in an enjoyable and interactive way, which received great engagement from visitors.'>
+        خلال الفعالية تفاعلتُ مع الزوار، ووعّيتُهم بأهمية الأمن السيبراني في
+        حياتهم اليومية، وقدّمتُ لهم لعبة بسيطة بعنوان
+        <strong>"سايبر كويز" (Cyber Quiz)</strong> تهدف إلى اختبار مدى معرفتهم
+        بعالم الأمن السيبراني بطريقة ممتعة وتفاعلية، وقد لاقت اللعبة تجاوباً
+        وتفاعلاً كبيراً من الزوار.
+      </p>
+
+      <ul>
+        <li data-aos="fade-up" data-aos-delay="100"><i class="fa-solid fa-circle-check"></i> <span data-en="Direct interaction with event visitors and raising their cybersecurity awareness.">التفاعل المباشر مع زوار الفعالية وتوعيتهم بالأمن السيبراني.</span></li>
+        <li data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-circle-check"></i> <span data-en="Presenting the &quot;Cyber Quiz&quot; game to test visitors' cybersecurity knowledge.">تقديم لعبة "سايبر كويز" لاختبار معرفة الزوار بالأمن السيبراني.</span></li>
+        <li data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-circle-check"></i> <span data-en="Spreading digital protection culture among university students.">نشر ثقافة الحماية الرقمية بين طلاب وطالبات الجامعة.</span></li>
+      </ul>
+
+      <div class="event-gallery">
+        <figure data-lightbox data-aos="zoom-in" data-aos-duration="800" data-aos-delay="0"><img src="images/CyberEvent-01.png" alt="صورة 1" loading="lazy"></figure>
+        <figure data-lightbox data-aos="zoom-in" data-aos-duration="800" data-aos-delay="80"><img src="images/CyberEvent-02.png" alt="صورة 2" loading="lazy"></figure>
+        <figure data-lightbox data-aos="zoom-in" data-aos-duration="800" data-aos-delay="160"><img src="images/CyberEvent-03.png" alt="صورة 3" loading="lazy"></figure>
+        <figure data-lightbox data-aos="zoom-in" data-aos-duration="800" data-aos-delay="240"><img src="images/CyberEvent-04.png" alt="صورة 4" loading="lazy"></figure>
+        <figure data-lightbox data-aos="zoom-in" data-aos-duration="800" data-aos-delay="320"><img src="images/CyberEvent-05.png" alt="صورة 5" loading="lazy"></figure>
+        <figure data-lightbox data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"><img src="images/CyberEvent-06.png" alt="صورة 6" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="0">
+        <h4 data-en="About">عنّي</h4>
+        <ul>
+          <li><a href="#about"><i class="fa-solid fa-angles-left" style="font-size:.7rem;color:var(--rose-light)"></i> <span data-en="Who I Am">من أنا</span></a></li>
+          <li><a href="#skills"><i class="fa-solid fa-angles-left" style="font-size:.7rem;color:var(--rose-light)"></i> <span data-en="Skills">المهارات</span></a></li>
+          <li><a href="#education"><i class="fa-solid fa-angles-left" style="font-size:.7rem;color:var(--rose-light)"></i> <span data-en="Education">التعليم</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+        <h4 data-en="My Work">أعمالي</h4>
+        <ul>
+          <li><a href="#projects"><i class="fa-solid fa-angles-left" style="font-size:.7rem;color:var(--rose-light)"></i> <span data-en="Projects">المشاريع</span></a></li>
+          <li><a href="#certificates"><i class="fa-solid fa-angles-left" style="font-size:.7rem;color:var(--rose-light)"></i> <span data-en="Certificates">الشهادات</span></a></li>
+          <li><a href="#activities"><i class="fa-solid fa-angles-left" style="font-size:.7rem;color:var(--rose-light)"></i> <span data-en="Activities">الأنشطة</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+        <h4 data-en="Contact">تواصل</h4>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/sondos-thabit-575568389" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/sondosthabit" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:sundus@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+        <h4 data-en="Accessibility Tools">أدوات الإتاحة</h4>
+        <div class="accessibility-tools">
+          <button onclick="zoomIn()" title="Zoom In" aria-label="Zoom In"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          <button onclick="zoomOut()" title="Zoom Out" aria-label="Zoom Out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+          <button onclick="toggleContrast()" title="Contrast" aria-label="Contrast"><i class="fa-solid fa-droplet"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> <span data-en="Sondos Thabit Al-Qahtani — All rights reserved">سندس ثابت القحطاني — جميع الحقوق محفوظة</span></p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-controls">
+    <button id="lbZoomIn" title="Zoom in" aria-label="Zoom in"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+    <button id="lbZoomOut" title="Zoom out" aria-label="Zoom out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+    <button id="lbDownload" title="Download" aria-label="Download"><i class="fa-solid fa-download"></i></button>
+    <button id="lbClose" class="close-btn" title="Close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="lightbox-img-wrap">
+    <img id="lightboxImg" src="" alt="Image">
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+/* =========================================
+   AOS — إعدادات الحركة المحسّنة
+   once:false → الحركة تتكرر كل مرة يدخل العنصر الشاشة
+   mirror:true → الحركة تنعكس عند الخروج (تعمل مع الطلوع والنزول)
+   ease-out-cubic → منحنى حركة أنعم وأكثر احترافية
+========================================= */
+AOS.init({
+  duration: 900,
+  easing: 'ease-out-cubic',
+  once: false,
+  mirror: true,
+  offset: 80,
+  anchorPlacement: 'top-bottom',
+  disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+});
+
+/* تحديث AOS عند تغيير حجم الشاشة */
+window.addEventListener('resize', () => AOS.refresh());
+
+/* Progress bar */
+window.addEventListener('scroll', () => {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById('progressBar').style.width = scrolled + '%';
+});
+
+/* Burger */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a =>
+  a.addEventListener('click', () => navLinks.classList.remove('open'))
+);
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Back to top */
+const backToTopBtn = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) backToTopBtn.classList.add('show');
+  else backToTopBtn.classList.remove('show');
+});
+backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+/* Numbers */
+function toArabic(num) {
+  const arabicDigits = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+  return num.toString().replace(/[0-9]/g, d => arabicDigits[d]);
+}
+function formatNumber(n) {
+  return document.documentElement.lang === 'en' ? String(n) : toArabic(n);
+}
+
+/* العدّادات */
+const counters = document.querySelectorAll('.counter');
+const COUNTER_DURATION = 1800;
+
+function animateCounter(counter) {
+  if (counter.dataset.animated === 'true') return;
+  counter.dataset.animated = 'true';
+
+  const target = parseInt(counter.getAttribute('data-target'), 10) || 0;
+  if (target === 0) { counter.innerText = formatNumber(0); return; }
+
+  const startTime = performance.now();
+  function step(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / COUNTER_DURATION, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(eased * target);
+    counter.innerText = formatNumber(current);
+    if (progress < 1) requestAnimationFrame(step);
+    else counter.innerText = formatNumber(target);
+  }
+  requestAnimationFrame(step);
+}
+
+const statsSection = document.querySelector('.stats-section');
+let countersStarted = false;
+if (statsSection) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !countersStarted) {
+        countersStarted = true;
+        counters.forEach(animateCounter);
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  observer.observe(statsSection);
+}
+
+/* اللغة والثيم */
+const langToggle = document.getElementById('langToggle');
+const themeToggle = document.getElementById('themeToggle');
+let currentLang = localStorage.getItem('lang') || 'ar';
+let currentTheme = localStorage.getItem('theme') || 'light';
+
+function applyLanguage(lang){
+  const isEn = lang === 'en';
+  document.documentElement.lang = isEn ? 'en' : 'ar';
+  document.documentElement.dir = isEn ? 'ltr' : 'rtl';
+
+  document.querySelectorAll('[data-en]').forEach(el => {
+    if (el.dataset.arStored === undefined) el.dataset.arStored = el.textContent;
+    el.textContent = isEn ? el.dataset.en : el.dataset.arStored;
+  });
+
+  document.querySelectorAll('[data-en-html]').forEach(el => {
+    if (el.dataset.arHtmlStored === undefined) el.dataset.arHtmlStored = el.innerHTML;
+    el.innerHTML = isEn ? el.dataset.enHtml : el.dataset.arHtmlStored;
+  });
+
+  document.querySelectorAll('.counter').forEach(c => {
+    if (c.dataset.animated === 'true') {
+      const target = parseInt(c.dataset.target, 10) || 0;
+      c.textContent = formatNumber(target);
+    }
+  });
+
+  langToggle.textContent = isEn ? 'ع' : 'EN';
+  langToggle.setAttribute('aria-label', isEn ? 'التبديل إلى العربية' : 'Switch to English');
+  localStorage.setItem('lang', lang);
+  currentLang = lang;
+  setTimeout(() => AOS.refresh(), 100);
+}
+
+function applyTheme(theme){
+  const isDark = theme === 'dark';
+  if (isDark) {
+    document.documentElement.setAttribute('data-theme','dark');
+    themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+    themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+  }
+  themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  localStorage.setItem('theme', theme);
+  currentTheme = theme;
+}
+
+langToggle.addEventListener('click', () => applyLanguage(currentLang === 'ar' ? 'en' : 'ar'));
+themeToggle.addEventListener('click', () => applyTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+
+applyLanguage(currentLang);
+applyTheme(currentTheme);
+
+/* Accessibility */
+let currentZoom = 100;
+function zoomIn() { if (currentZoom < 150) { currentZoom += 10; document.documentElement.style.fontSize = currentZoom + '%'; } }
+function zoomOut() { if (currentZoom > 70) { currentZoom -= 10; document.documentElement.style.fontSize = currentZoom + '%'; } }
+let isGrayscale = false;
+function toggleContrast() { isGrayscale = !isGrayscale; document.body.style.filter = isGrayscale ? 'grayscale(100%)' : 'none'; }
+
+/* Lightbox */
+const lightbox    = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lbZoomIn    = document.getElementById('lbZoomIn');
+const lbZoomOut   = document.getElementById('lbZoomOut');
+const lbDownload  = document.getElementById('lbDownload');
+const lbClose     = document.getElementById('lbClose');
+
+let lbScale = 1;
+let currentImgSrc = '';
+
+function openLightbox(src) {
+  currentImgSrc = src;
+  lightboxImg.src = src;
+  lbScale = 1;
+  lightboxImg.style.transform = 'scale(1)';
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+  lightboxImg.src = '';
+}
+
+document.querySelectorAll('.event-gallery figure').forEach(fig => {
+  fig.addEventListener('click', () => {
+    const img = fig.querySelector('img');
+    if (img && img.src) openLightbox(img.src);
+  });
+});
+
+lbZoomIn.addEventListener('click', e => {
+  e.stopPropagation();
+  if (lbScale < 3) { lbScale += 0.25; lightboxImg.style.transform = `scale(${lbScale})`; }
+});
+lbZoomOut.addEventListener('click', e => {
+  e.stopPropagation();
+  if (lbScale > 0.5) { lbScale -= 0.25; lightboxImg.style.transform = `scale(${lbScale})`; }
+});
+lbDownload.addEventListener('click', async e => {
+  e.stopPropagation();
+  if (!currentImgSrc) return;
+  try {
+    const response = await fetch(currentImgSrc);
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = currentImgSrc.split('/').pop() || 'cyber-event.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch (err) {
+    const a = document.createElement('a');
+    a.href = currentImgSrc;
+    a.download = currentImgSrc.split('/').pop() || 'cyber-event.png';
+    a.target = '_blank';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+});
+lbClose.addEventListener('click', e => { e.stopPropagation(); closeLightbox(); });
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox || e.target.classList.contains('lightbox-img-wrap')) closeLightbox();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+});
+</script>
+
+</body>
+</html>
